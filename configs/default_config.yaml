@@ -1,0 +1,23 @@
+seed: 42
+seq_len: 60
+d_model: 64
+n_heads: 4
+transformer_layers: 2
+d_ff: 128
+dropout: 0.20
+candidate_lags: 5
+num_regimes: 3
+regime_embedding_dim: 32
+learning_rate: 0.001
+weight_decay: 0.0001
+rank_temperature: 0.10
+loss_weights:
+  point: 1.00
+  rank: 0.20
+  edge_utility: 0.05
+  entropy: 0.001
+  smoothness: 0.001
+portfolio:
+  top_pct: 0.10
+  bottom_pct: 0.10
+  cost_rate: 0.001
